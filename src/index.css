@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌸 Design System — Peach Pink theme (all HSL colors) */
+@layer base {
+  :root {
+    --background: 10 100% 99%;
+    --foreground: 10 15% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 10 15% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 10 15% 20%;
+    --primary: 10 79% 71%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 340 85% 70%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 10 40% 96%;
+    --muted-foreground: 10 20% 45%;
+    --accent: 340 85% 70%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 63%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 10 79% 71%;
+    --warning: 25 90% 65%;
+    --border: 10 30% 90%;
+    --input: 10 30% 90%;
+    --ring: 10 79% 71%;
+    --radius: 1rem;
+    --gradient-primary: linear-gradient(135deg,
+        hsl(10 79% 71%),
+        hsl(340 85% 70%));
+    --gradient-secondary: linear-gradient(135deg,
+        hsl(10 79% 71%),
+        hsl(25 90% 65%));
+  }
+
+  .dark {
+    --background: 320 15% 10%;
+    --foreground: 0 0% 98%;
+    --card: 320 15% 12%;
+    --card-foreground: 0 0% 98%;
+    --primary: 340 85% 70%;
+    --secondary: 10 79% 71%;
+    --muted: 320 15% 20%;
+    --accent: 340 85% 70%;
+    --border: 320 15% 20%;
+    --ring: 340 85% 70%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* 🌀 Floating Blob Animations */
+@keyframes blob-spin-slow {
+  0% {
+    transform: rotate(0deg) translateX(60px) rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg) translateX(60px) rotate(-180deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(60px) rotate(-360deg);
+  }
+}
+
+@keyframes blob-spin-fast {
+  0% {
+    transform: rotate(0deg) translateX(80px) rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg) translateX(80px) rotate(-180deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(80px) rotate(-360deg);
+  }
+}
+
+.animate-blob-spin-slow {
+  animation: blob-spin-slow 60s ease-in-out infinite;
+}
+
+.animate-blob-spin-fast {
+  animation: blob-spin-fast 45s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: rgba(239, 137, 120, 0.8)
+  }
+
+  /* màu primary */
+}
+
+.animate-typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right-width: 4px;
+  animation: typing 4s steps(40, end) 0.5s forwards, blink 0.75s step-end infinite;
+}

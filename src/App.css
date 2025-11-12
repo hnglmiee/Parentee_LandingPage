@@ -1,0 +1,54 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* 🌸 Logo styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms;
+  will-change: filter;
+}
+
+/* 💖 Logo hover glow — peach pink instead of blue */
+.logo:hover {
+  filter: drop-shadow(0 0 2em hsl(10 79% 71% / 0.6));
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em hsl(340 85% 70% / 0.6));
+}
+
+/* ✨ Spin animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* 🩰 Card styling */
+.card {
+  padding: 2em;
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--card-foreground);
+  box-shadow: 0 4px 10px hsl(10 20% 80% / 0.2);
+}
+
+/* 🩷 Subtle text */
+.read-the-docs {
+  color: hsl(10 10% 60%);
+}
