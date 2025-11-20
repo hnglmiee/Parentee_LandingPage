@@ -79,19 +79,23 @@ const Index = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
+              asChild
               size="lg"
               className="relative overflow-hidden text-lg text-white px-6 py-3 rounded-lg font-semibold
-             bg-gradient-to-r from-primary to-accent 
-             before:absolute before:inset-0 before:bg-gradient-to-r before:from-accent before:to-primary
-             before:-translate-x-full before:transition-transform before:duration-500
-             hover:before:translate-x-0
-             shadow-lg"
+  bg-gradient-to-r from-primary to-accent 
+  before:absolute before:inset-0 before:bg-gradient-to-r before:from-accent before:to-primary
+  before:-translate-x-full before:transition-transform before:duration-500
+  hover:before:translate-x-0
+  shadow-lg"
             >
-              <span className="relative flex items-center justify-center">
-                Bắt đầu dùng thử miễn phí
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </span>
+              <a href="/app-release.apk" download>
+                <span className="relative flex items-center justify-center">
+                  Bắt đầu dùng thử miễn phí
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </span>
+              </a>
             </Button>
+
           </div>
         </motion.div>
       </section>
