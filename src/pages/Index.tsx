@@ -164,12 +164,16 @@ const Index = () => {
               Tham gia cùng hàng ngàn phụ huynh hạnh phúc sử dụng Parentee mỗi ngày.
             </p>
             <Button
+              asChild
               size="lg"
               className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-lg"
             >
-              Bắt đầu miễn phí
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <a href="/app-release.apk" download>
+                Bắt đầu miễn phí
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
             </Button>
+
           </div>
         </div>
       </section>
