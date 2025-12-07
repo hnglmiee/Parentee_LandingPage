@@ -88,7 +88,7 @@ const Index = () => {
   hover:before:translate-x-0
   shadow-lg"
             >
-              <a href="/app-release.apk" download>
+              <a href="/parentee.apk" download>
                 <span className="relative flex items-center justify-center">
                   Bắt đầu dùng thử miễn phí
                   <ArrowRight className="ml-2 w-5 h-5" />
@@ -168,7 +168,7 @@ const Index = () => {
               size="lg"
               className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-lg"
             >
-              <a href="/app-release.apk" download>
+              <a href="/parentee.apk" download>
                 Bắt đầu miễn phí
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
