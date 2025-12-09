@@ -31,7 +31,7 @@ const Navigation = () => {
               asChild
               className="bg-gradient-to-r from-primary to-accent hover:opacity-90"
             >
-              <a href="/parentee.apk" download target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/uc?export=download&id=1KAWYZsORHkF8D32YQyokMwt458FGJ46l">
                 Bắt đầu
               </a>
             </Button>
